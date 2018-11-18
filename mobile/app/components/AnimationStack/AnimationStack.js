@@ -9,7 +9,7 @@ export default class AnimationStack extends Component {
             <View>
                 {
                     this.props.children.map((item, i) => (
-                        <AnimatedSect delay={150*i}>
+                        <AnimatedSect key={i} delay={150*i}>
                             {item}
                         </AnimatedSect>
                     ))

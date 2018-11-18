@@ -7,6 +7,7 @@ import AnimationStack from "../components/AnimationStack"
 import Bedtime from "../components/Bedtime"
 import Warning from "../components/Warning"
 import SleepTimer from "../components/SleepTimer"
+import History from "../components/History"
 
 @connect((store) => {
 	return {
@@ -29,6 +30,7 @@ export default class Home extends Component {
                         {string} until bedtime.
                     </Warning>
                     <SleepTimer></SleepTimer>
+                    <History />
                 </AnimationStack>
             </View>
         )
