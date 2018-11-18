@@ -1,4 +1,4 @@
 export default {
-    BASE_URL: "http://68.183.162.65",
+    BASE_URL: "http://10.1.240.44:3000",
     API_ENDPOINT: "/api/v1"
 }

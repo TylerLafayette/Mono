@@ -1,7 +1,7 @@
 import { combineReducers } from "redux"
 
-import bedtimeReducer from "./bedtimeReducer"
+import bedtime from "./bedtimeReducer"
 
 export default combineReducers({
-    bedtimeReducer
+    bedtime
 })
