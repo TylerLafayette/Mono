@@ -2,7 +2,7 @@ import moment from "moment"
 
 export default function reducer(state={
     targetBedtime: moment().set({
-        hour: 22,
+        hour: 24,
         minutes: 0,
         seconds: 0,
         milliseconds: 0

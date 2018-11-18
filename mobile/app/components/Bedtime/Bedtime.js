@@ -12,7 +12,8 @@ import WaveAnim from "../WaveAnim"
 
 @connect((store) => {
 	return {
-		bedtime: store.bedtime
+        bedtime: store.bedtime,
+        track: store.track
 	}
 })
 export default class Bedtime extends Component {

@@ -5,6 +5,7 @@ import store from "./store"
 
 import { NativeRouter as Router, Switch, Route, AndroidBackButton } from "react-router-native"
 import Home from "./screens/Home"
+import SleepMode from "./screens/SleepMode"
 
 export default class Index extends Component {
     render() {
@@ -21,6 +22,7 @@ export default class Index extends Component {
                         <AndroidBackButton>
                             <Switch>
                                 <Route exact path="/" component={Home} />
+                                <Route exact path="/sleep" component={SleepMode} />
                             </Switch>
                         </AndroidBackButton>
                     </Router>
