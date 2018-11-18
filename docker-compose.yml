@@ -1,0 +1,17 @@
+version: '2'
+services:
+	mongodb:
+		image: mongo:latest
+		command: mongod
+		ports:
+		 - "27017:27017"
+		environment:
+		 - MONGOID_ENV=test
+		volumes:
+		 - ./data:/data/db
+	api:
+		build: ./server
+		depends_on:
+		 - "mongodb"
+		ports:
+		 - "3001:3001"
